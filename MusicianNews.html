@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+    
+<!-- head 시작 -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+<title>모바일 웹 앱 MusicianNews</title>
+    
+<link rel="stylesheet" type="text/css" href="slick.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="MusicianNews.css"/>
+    
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="slick.min.js"></script>
+<script type="text/javascript">
+</script>
+    
+</head>
+<!-- head 끝 -->
+    
+<!-- body 시작 -->
+<body>
+<div id="wrap">
+
+<!-- menu 시작 -->
+    
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.body.style.backgroundColor = "white";
+}
+    
+$(document).ready(function(){
+    $(".musicianBtn").click(function(){
+        $(".sidenav1").toggle();
+    });
+})
+</script>
+
+<!-- menu 끝 -->
+    
+    
+<!-- header 시작 -->
+<header id="header">
+    <a href="Index.html"><h1>뒤로가기</h1></a>
+    <div class="searchIcon"></div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="Index.html">Home</a>
+            <a href="Musician_all.html">Musician</a>
+            <a href="#">Actor</a>
+            <a href="#">Entertainer</a>
+            <a href="#">Model</a>
+            <a href="#">Music video</a>
+            <a href="#">Album</a>
+            <a href="#">News &amp; Notice</a>
+            <a href="#">Map</a>
+            <a href="#">Login</a>
+            <a href="#">한국어 · ENGLISH · 中文 · 日本語</a>
+        </div>
+</header>
+<!-- header 끝 -->
+    
+<!-- container 시작 -->
+<div id="container">
+    
+    <!-- musicianTitle 시작 -->
+    <div class="musicianTitle">
+    <h2>Musician</h2>
+    </div>
+    <!-- musicianTitle 끝 -->
+    
+    <!-- musicianMenu 시작 -->
+    <div class="musicianMenu">
+        <div class="news">
+            <a href="#">
+                <p>News</p>
+            </a>
+        </div>
+        
+        <div class="musician">
+            
+            <div class="musicianBtn">
+            <img src="images/Musician.png" alt="버튼이미지"/>
+            <p>musician</p>
+            </div>
+    
+        <div id="musician" class="sidenav1" style="display: none;">
+            <a href="Musician_all.html">Musician</a>
+            <a href="#">Actor</a>
+            <a href="#">Entertainer</a>
+            <a href="#">Model</a>
+        </div>
+        </div>
+    </div>
+    <!-- musicianMenu 끝 -->
+    
+    <!-- mainRow1 -->
+    <div class="mainRow1">
+        <a href="MusicianNews1.html">
+        <div class="img"></div>
+        </a>
+        <div class="text">
+            <p class="title">
+                씨엘 &#39;황금인맥&#39; 피터버그·존 말코비치와<br/>
+                다정하게 &#39;찰칵&#39;
+            </p>
+            <p>2018&#45;01&#45;06 11&#58;49 오전</p>
+            <p>
+                가수 씨엘이 SNS를 통해 황금인맥을 자랑했다&#46; 5일 씨엘은 자신의 인스타그램에 &#39;귀요미&#39;라는 짧은 문구와함께 존 말코비치&#44; 피터버그와 찍은 사진을 게시했다&#46;
+            </p>
+        </div>
+    </div>
+    <!-- mainRow1 -->
+    
+    <!-- mainRow2 -->
+    <div class="mainRow2">
+        <a href="#">
+        <div class="img"></div>
+        </a>
+        <div class="text">
+            <p class="title">
+                위너 &#39;릴리릴리&#39; 男아이돌 최초 차트인<br/>
+                1억 스트리밍 돌파
+            </p>
+            <p>2018&#45;01&#45;04 03&#58;34 오후</p>
+            <p>
+                그룹 위너가 남자 아이돌 최초로 차트인 1억 스트리밍을 돌파하는 기염을 토했다&#46; 4일 오전 가온 주간 스트리밍 차트에 따르면&#44; 위너 &#39;REALLY REALLY&#40;릴리릴리&#41;&#39;는 누적 음원 스트리밍 1억 건을 돌파하여 위너의 식지 않는 인기를 증명했다&#46;
+            </p>
+        </div>
+    </div>
+    <!-- mainRow2 -->
+    
+    <!-- mainRow3 -->
+    <div class="mainRow3">
+        <a href="#">
+        <div class="img"></div>
+        </a>
+        <div class="text">
+            <p class="title">
+                떳다 하면 &#39;쏘 핫&#46;&#46;블랙핑크&#39; 조회수의 여왕이 되다
+            </p>
+            <p>2017&#45;12&#45;27 02&#58;22 오후</p>
+            <p>
+                &#39;쏘 핫&#39; 걸그룹 블랙핑크가 연말무대에 떴다&#46; 원더걸스의 &#39;SO HOT&#40;쏘 핫&#41;&#39;을 블랙핑크만의 색깔로 커버&#44; 온라인상에서 폭발적인 조회수를 기록하고있다&#46;
+            </p>
+        </div>
+    </div>
+    <!-- mainRow3 -->
+    
+    <!-- mainRow4 -->
+    <div class="mainRow4">
+        <a href="#">
+        <div class="img"></div>
+        </a>
+        <div class="text">
+            <p class="title">
+                씨엘 &#39;황금인맥&#39; 피터버그·존 말코비치와<br/>
+                다정하게 &#39;찰칵&#39;
+            </p>
+            <p>2018&#45;01&#45;06 11&#58;49 오전</p>
+            <p>
+                가수 씨엘이 SNS를 통해 황금인맥을 자랑했다&#46;<br/>
+                5일 씨엘은 자신의 인스타그램에 &#39;귀요미&#39;라는 짧은 문구와함께<br/>
+                존 말코비치&#44; 피터버그와 찍은 사진을 게시했다&#46;
+            </p>
+        </div>
+    </div>
+    <!-- mainRow4 -->
+    
+    <!-- mainRow5 -->
+    <div class="mainRow5">
+        <a href="#">
+        <div class="img"></div>
+        </a>
+        <div class="text">
+            <p class="title">
+                씨엘 &#39;황금인맥&#39; 피터버그·존 말코비치와<br/>
+                다정하게 &#39;찰칵&#39;
+            </p>
+            <p>2018&#45;01&#45;06 11&#58;49 오전</p>
+            <p>
+                가수 씨엘이 SNS를 통해 황금인맥을 자랑했다&#46;<br/>
+                5일 씨엘은 자신의 인스타그램에 &#39;귀요미&#39;라는 짧은 문구와함께<br/>
+                존 말코비치&#44; 피터버그와 찍은 사진을 게시했다&#46;
+            </p>
+        </div>
+    </div>
+    <!-- mainRow5 -->
+    
+    <!-- moreBtn -->
+    <div class="moreBtn">More</div>
+    <!-- moreBtn -->
+    
+</div>   
+<!-- container 끝 -->
+    
+<!-- footer 시작 -->
+<footer id="footer">
+    
+<!-- topBtn -->
+<div class="topBtn">TOP</div>
+<!-- topBtn -->
+    
+<div>
+    <ul class="footer">
+        <li><a href="#">ABOUT YG</a></li>
+        <li><a href="#">YG RECRUIT</a></li>
+        <li><a href="#">자회사 RECRUIT</a></li>
+        <li><a href="#">SITEMAP</a></li>
+        <li><a href="#">CUSTOMER CENTER</a></li>
+        <li><a href="#">저작권 침해신고</a></li>
+    </ul>
+</div>
+<div class="name">
+    YG ENTERTAINMENT Communication Center
+</div>
+<div class="copy">
+    Copyright &copy; 2018  YG ENTERTAINMENT Co&#46;&#44; Ltd&#46;<br/>
+    All rights reserved&#46;
+</div>
+</footer>
+<!-- footer 끝 -->
+    
+</div>   
+</body>
+<!-- body 끝 -->   
+</html>

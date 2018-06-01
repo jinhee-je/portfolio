@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+    
+<!-- head 시작 -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+<title>모바일 웹 앱 Map</title>
+    
+<link rel="stylesheet" type="text/css" href="slick.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="Map.css"/>
+    
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="slick.min.js"></script>
+<script type="text/javascript">
+</script>
+    
+</head>
+<!-- head 끝 -->
+    
+<!-- body 시작 -->
+<body>
+<div id="wrap">
+
+<!-- menu 시작 -->
+    
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.body.style.backgroundColor = "white";
+}
+    
+$(document).ready(function(){
+    $(".musicianBtn").click(function(){
+        $(".sidenav1").toggle();
+    });
+})
+</script>
+
+<!-- menu 끝 -->
+    
+    
+<!-- header 시작 -->
+<header id="header">
+    <h1></h1>
+    <div class="searchIcon"></div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="Index.html">Home</a>
+            <a href="Musician_all.html">Musician</a>
+            <a href="#">Actor</a>
+            <a href="#">Entertainer</a>
+            <a href="#">Model</a>
+            <a href="#">Music video</a>
+            <a href="#">Album</a>
+            <a href="#">News &amp; Notice</a>
+            <a href="#">Map</a>
+            <a href="#">Login</a>
+            <a href="#">한국어 · ENGLISH · 中文 · 日本語</a>
+        </div>
+</header>
+<!-- header 끝 -->
+    
+<!-- mainSlider 시작 -->
+<div class="mainSlider">
+    <p>오시는 길</p>
+</div>
+<!-- mainSlider 끝 -->
+    
+<!-- container 시작 -->
+<div id="container">
+    
+    <div class="map">
+        <!-- * Daum 지도 - 지도퍼가기 -->
+<!-- 1. 지도 노드 -->
+<div id="daumRoughmapContainer1527752911248" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+<!--
+	2. 설치 스크립트
+	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+-->
+<script charset="UTF-8" class="daum_roughmap_loader_script" src="http://dmaps.daum.net/map_js_init/roughmapLoader.js"></script>
+
+<!-- 3. 실행 스크립트 -->
+<script charset="UTF-8">
+	new daum.roughmap.Lander({
+		"timestamp" : "1527752911248",
+		"key" : "oedh",
+		"mapWidth" : "600",
+		"mapHeight" : "300"
+	}).render();
+</script>
+    </div>
+    <div class="text">
+        <p>
+            <img src="images/addres.png" alt="주소"/>
+            서울 마포구 희우정로1길 3 &#40;우&#41;04028
+            지번합정동 397-5
+        </p>
+        
+        <p>
+            <img src="images/w.png" alt="사이트"/>
+            www&#46;ygfamily&#46;com
+        </p>
+        
+        <p>
+            <img src="images/p.png" alt="대표번호"/>
+            02&#45;3142&#45;1104
+        </p>
+    </div>
+    
+    <div class="subway cf">
+        <h3>지하철</h3>
+        
+        <div class="box">
+            <a href="http://map.daum.net?subwayId=SES0238" target="_blank" class="link_station" data-logtarget="" data-logevent="waytogo,subway">합정역</a>
+        <span class="seoul_line2">
+            <img src="images/q2.png" alt="2호선"/>
+        </span>
+        <span class="seoul_line6">
+            <img src="images/q1.png" alt="6호선"/>
+        </span>
+        <span class="bg_bar">|</span>
+        <span class="num_wayout">8번 출구</span>
+        <span class="num_wayouTxt">도보 9분</span>
+        </div>
+        
+        <div class="box">
+            <a href="http://map.daum.net?subwayId=SES2622" target="_blank" class="link_station" data-logtarget="" data-logevent="waytogo,subway">망원역</a>
+        <span class="seoul_line6">
+            <img src="images/q1.png" alt="6호선"/>
+        </span>
+        <span class="bg_bar">|</span>
+        <span class="num_wayout">2번 출구</span>
+        <span class="num_wayouTxt">도보 18분</span>
+        </div>
+        
+    </div>
+    
+    <hr/>
+    
+    <div class="bus cf">
+        <h3>버스정류장</h3>
+        <div class="ride_wayout">
+            <strong class="tit_wayout">
+                <a href="http://map.daum.net?busStopId=BS115605" class="link_wayout" target="_blank" data-logtarget="" data-logevent="waytogo,busstop">
+                    <span class="txt_busstop">남경장</span>
+                    <span class="txt_number"><span class="screen_out">정류장 번호: </span>(14754) <span class="bg_bar">|</span> <span class="screen_out">거리: </span> 149m</span>
+                </a>
+            </strong>
+            <ul class="list_ride">
+                <li>
+                    <em class="bus_town">마을</em>
+                    <div class="bus_ride">
+                        <span class="num_ride">마포16</span>
+                        <a href="http://map.daum.net?busStopId=BS115605" target="_blank" class="btn_more hide" data-logtarget="" data-logevent="waytogo,busstop_more"><span class="ico_comm ico_more">더보기</span></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="ride_wayout"></div>
+        <div class="ride_wayout"></div>
+    </div>
+    
+    <!-- moreBtn -->
+    <div class="moreBtn">More</div>
+    <!-- moreBtn -->
+    
+</div>   
+<!-- container 끝 -->
+    
+<!-- footer 시작 -->
+<footer id="footer">
+    
+<!-- topBtn -->
+<div class="topBtn">TOP</div>
+<!-- topBtn -->
+    
+<div>
+    <ul class="footer">
+        <li><a href="#">ABOUT YG</a></li>
+        <li><a href="#">YG RECRUIT</a></li>
+        <li><a href="#">자회사 RECRUIT</a></li>
+        <li><a href="#">SITEMAP</a></li>
+        <li><a href="#">CUSTOMER CENTER</a></li>
+        <li><a href="#">저작권 침해신고</a></li>
+    </ul>
+</div>
+<div class="name">
+    YG ENTERTAINMENT Communication Center
+</div>
+<div class="copy">
+    Copyright &copy; 2018  YG ENTERTAINMENT Co&#46;&#44; Ltd&#46;<br/>
+    All rights reserved&#46;
+</div>
+</footer>
+<!-- footer 끝 -->
+    
+</div>   
+</body>
+<!-- body 끝 -->   
+</html>

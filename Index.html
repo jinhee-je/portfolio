@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ko">
+    
+<!-- head 시작 -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+<title>모바일 웹 앱 Index</title>
+
+    
+<link rel="stylesheet" type="text/css" href="slick.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="Index.css"/>
+    
+    
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="slick.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        
+        //mainRow1
+        $('.regular').slick({
+          centerMode: true,
+          centerPadding: '120px',
+          slidesToShow: 3,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '60px',
+                slidesToShow: 3
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+              }
+            }
+          ]
+        });
+        
+        //mainRow2
+         $('.slider-for').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          fade: true,
+          asNavFor: '.slider-nav'
+        });
+        $('.slider-nav').slick({
+            arrows: false,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          asNavFor: '.slider-for',
+          dots: true,
+          centerMode: true,
+          focusOnSelect: true
+        });
+    });
+</script>
+    
+</head>
+<!-- head 끝 -->
+    
+<!-- body 시작 -->
+<body>
+<div id="wrap">
+
+<!-- menu 시작 -->
+    
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.body.style.backgroundColor = "white";
+}
+</script>
+
+<!-- menu 끝 -->
+    
+<!-- header 시작 -->
+<header id="header">
+    <h1>LOGO</h1>
+    <div class="searchIcon"></div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="Index.html">Home</a>
+            <a href="Musician_all.html">Musician</a>
+            <a href="#">Actor</a>
+            <a href="#">Entertainer</a>
+            <a href="#">Model</a>
+            <a href="#">Music video</a>
+            <a href="#">Album</a>
+            <a href="#">News &amp; Notice</a>
+            <a href="#">Map</a>
+            <a href="#">Login</a>
+            <a href="#">한국어 · ENGLISH · 中文 · 日本語</a>
+        </div>
+    
+    <div class="text">
+        <a href="news1.html">
+            <h2>iKON</h2>
+            <P class="title">&#39;사랑을 했다&#39; MV haszzzzzzzzzs</P>
+            <p>그룹 아이콘이 컴백 이후 5일째</p>
+            <p>각종 음원차트 정상에서 붙박이 흥행 중이다.</p>
+        </a>
+    </div>
+</header>
+<!-- header 끝 -->
+    
+<!-- container 시작 -->
+<div id="container">
+    
+    <!-- mainSlider 시작 -->
+    <div class="mainSlider">
+        <img src="images/blackpink.png" alt="블랙핑크이미지"/>
+    <div class="text">
+    <h2>&#39;블핑하우스&#39;&#44; 4회만에 3천만뷰 돌파aaaaaaaaaaaaa<br/>
+        폭발적 인기
+    </h2>
+        <p class="title">
+            블랙핑크 제니 &#39;블핑하우스&#39;가 4회 만에<br/>
+            누적 조회수 3000만뷰를 돌파했다&#46;
+        </p>
+    </div>
+        
+        <div class="box1 cf">
+            
+        <div>
+            <img src="images/photo1.jpg" alt="제니이미지"/>
+            <p>
+                블랙핑크 제니 &#39;인기가요&#39;<br/>
+                녹화중 발목부상 병원行<br/>
+                &#39;진통제 투혼&#39;
+            </p>
+        </div>
+        
+        <div>
+            <img src="images/photo2.jpg" alt="이하이이미지"/>
+            <p>
+                이하이&#44; 일본투어 &#39;<br/>
+                성공적 출발&#39;<br/>
+                싱글차트 1위
+            </p>
+        </div>
+        
+        <div>
+            <img src="images/photo3.jpg" alt="태양민효린이미지"/>
+            <p>
+                &#39;한 폭의 그림&#39;<br/>
+                태양♥민효린<br/>
+                웨딩화보 공개
+            </p>
+        </div>
+        
+        </div>
+        
+    </div>
+    <!-- mainSlider 끝 -->
+    
+    <!-- mainRow1 -->
+    <div class="mainRow1 cf">
+        <div class="slider slider-for">
+
+        <div>
+            <h3>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/Amq-qlqbjYA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </h3>
+        </div>
+            
+        <div>
+            <h3>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/wEQpfil0IYA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </h3>
+        </div>
+            
+        <div>
+            <h3>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/gvI89r8Tt9s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </h3>
+        </div>
+            
+        <div>
+            <h3>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/zIB7C9kr3_E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </h3>
+        </div>
+            
+        <div>
+            <h3>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/j7_lSP8Vc3o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </h3>
+        </div>
+    </div>
+        
+        
+    <div class="slider slider-nav">
+        <div>
+            <h3>
+                <img src="images/p1.jpg" alt="블랙핑크" width="100%"/>
+            </h3>
+        </div>
+        <div>
+            <h3>
+                <img src="images/p2.jpg" alt="악동뮤지션" width="100%"/>
+            </h3>
+        </div>
+        <div>
+            <h3>
+                <img src="images/p3.jpg" alt="이하이&박봄" width="100%"/>
+            </h3>
+        </div>
+        <div>
+            <h3>
+                <img src="images/p4.jpg" alt="이하이" width="100%"/>
+            </h3>
+        </div>
+        <div>
+            <h3>
+                <img src="images/p5.jpg" alt="씨엘" width="100%"/>
+            </h3>
+        </div>
+        </div>
+    
+    </div>
+    <!-- mainRow1 -->
+    
+    <!-- mainRow2 -->
+    <div class="mainRow2 cf">
+    <div class="text">
+    <h2>New Album</h2>
+        <p class="title">LOUDER</p>
+        <p>태양&#44; 평창올림픽 응원곡 &#39;LOUDER&#39; 발표</p>
+    </div>
+        
+    <section class="regular slider">
+        <div>
+            <h3>
+                <img src="images/a1.jpg" alt="블핑하우스">
+            </h3>
+        </div>
+        <div>
+            <h3>
+                <img src="images/a2.jpg" alt="빅뱅">
+            </h3>
+        </div>
+        <div>
+            <h3>
+                <img src="images/a3.jpg" alt="태양">
+            </h3>
+        </div>
+    </section>
+        
+    </div>
+    <!-- mainRow2 -->
+    
+    <!-- mainRow3 -->
+    <div class="mainRow3">
+    <img src="images/iKon.png" alt="아이콘이미지"/>
+    <div class="text">
+        <p class="title">
+            &#39;하트수 2억1천만&#39; 아이콘&#44;<br/>
+            팬들이 간절히기다린 컴백 D&#45;1
+        </p>
+        <p class="p">
+            8개월만의 컴백이자 2년만의 정규앨범이다&#46;<br/>
+            아이콘이 드디어 가요계에 돌아올 준비를 마쳤다&#46;
+        </p>
+    </div>
+    </div>
+    <!-- mainRow3 -->
+    
+    <!-- mainRow4 -->
+    <div class="mainRow4">
+    <img src="images/winer.png" alt="위너이미지"/>
+    <div class="text">
+        <p class="title">
+            위너&#44; 日 부도칸서 투어 피날레&#46;&#46;<br/>
+            강승윤 &#39;꿈의 무대 실현돼 기뻐&#39;
+        </p>
+        <p class="p">위너가 데뷔 처음으로 일본 부도칸 무대에 오른다&#46;</p>
+    </div>
+    </div>
+    <!-- mainRow4 -->
+    
+    <!-- mainRow5 -->
+    <div class="mainRow5">
+    <img src="images/leehi.png" alt="골든슬럼버이미지"/>
+    <div class="text">
+        <p class="title">
+            &#39;골드슬럼버&#39; 강승윤X이하이&#44;<br/>
+            스페셜 OST 불렀다<br/>
+            오늘 &#40;18일&#41; 음원 선공개
+        </p>
+        <p class="p">
+            개봉을 앞둔 &#39;골든슬럼버&#39;가 강승윤과 이하이가 각각 부른<br/>
+            비틀즈의 &#39;골든슬럼버&#39; 음원을 선공개한다&#46;
+        </p>
+    </div>
+    </div>
+    <!-- mainRow5 -->
+    
+    <!-- moreBtn -->
+    <div class="moreBtn">More</div>
+    <!-- moreBtn -->
+    
+</div>
+<!-- container 끝 -->
+    
+<!-- footer 시작 -->
+<footer id="footer">
+    
+<!-- topBtn -->
+<div class="topBtn">TOP</div>
+<!-- topBtn -->
+    
+<div>
+    <ul class="footer">
+        <li><a href="#">ABOUT YG</a></li>
+        <li><a href="#">YG RECRUIT</a></li>
+        <li><a href="#">자회사 RECRUIT</a></li>
+        <li><a href="#">SITEMAP</a></li>
+        <li><a href="#">CUSTOMER CENTER</a></li>
+        <li><a href="#">저작권 침해신고</a></li>
+    </ul>
+</div>
+<div class="name">
+    YG ENTERTAINMENT Communication Center
+</div>
+<div class="copy">
+    Copyright &copy; 2018  YG ENTERTAINMENT Co&#46;&#44; Ltd&#46;<br/>
+    All rights reserved&#46;
+</div>
+</footer>
+<!-- footer 끝 -->
+    
+</div>   
+</body>
+<!-- body 끝 -->   
+</html>

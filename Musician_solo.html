@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+    
+<!-- head 시작 -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+<title>모바일 웹 앱 Musician_solo</title>
+    
+<link rel="stylesheet" type="text/css" href="slick.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="Musician_solo.css"/>
+    
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="slick.min.js"></script>
+<script type="text/javascript">
+</script>
+    
+</head>
+<!-- head 끝 -->
+    
+<!-- body 시작 -->
+<body>
+<div id="wrap">
+
+<!-- menu 시작 -->
+    
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.body.style.backgroundColor = "white";
+}
+    
+$(document).ready(function(){
+    $(".musicianBtn").click(function(){
+        $(".sidenav1").toggle();
+    });
+})
+</script>
+
+<!-- menu 끝 -->
+    
+    
+<!-- header 시작 -->
+<header id="header">
+    <a href="Index.html"><h1>뒤로가기</h1></a>
+    <div class="searchIcon"></div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="Index.html">Home</a>
+            <a href="Musician_all.html">Musician</a>
+            <a href="#">Actor</a>
+            <a href="#">Entertainer</a>
+            <a href="#">Model</a>
+            <a href="#">Music video</a>
+            <a href="#">Album</a>
+            <a href="#">News &amp; Notice</a>
+            <a href="#">Map</a>
+            <a href="#">Login</a>
+            <a href="#">한국어 · ENGLISH · 中文 · 日本語</a>
+        </div>
+</header>
+<!-- header 끝 -->
+    
+<!-- container 시작 -->
+<div id="container">
+    
+    <!-- musicianTitle 시작 -->
+    <div class="musicianTitle">
+    <h2>Musician</h2>
+    </div>
+    <!-- musicianTitle 끝 -->
+    
+    <!-- musicianMenu 시작 -->
+    <div class="musicianMenu">
+        <div class="news">
+            <a href="MusicianNews.html">
+                <p>News</p>
+            </a>
+        </div>
+        
+        <div class="musician">
+            
+            <div class="musicianBtn">
+            <img src="images/Musician.png" alt="버튼이미지"/>
+            <p>musician</p>
+            </div>
+    
+        <div id="musician" class="sidenav1" style="display: none;">
+            <a href="Musician_all.html">Musician</a>
+            <a href="#">Actor</a>
+            <a href="#">Entertainer</a>
+            <a href="#">Model</a>
+        </div>
+        </div>
+        <div class="text">
+            <a href="Musician_group.html"><p>Group</p></a>
+            <a href="Musician_solo.html"><p>Solo</p></a>
+            <a href="Musician_all.html"><p>All</p></a>
+        </div>
+    </div>
+    <!-- musicianMenu 끝 -->
+    
+    <!-- mainRow1 -->
+    <div class="mainRow1 cf">
+        <div>
+            <img src="images/m1.jpg" alt="이하이"/>
+            <p>이하이</p>
+        </div>
+        <div>
+            <img src="images/m6.jpg" alt="박산다라"/>
+            <p>박산다라</p>
+        </div>
+    </div>
+    <!-- mainRow1 -->
+    
+    <!-- mainRow2 -->
+    <div class="mainRow2 cf">
+        <div>
+            <img src="images/m12.jpg" alt="씨엘"/>
+            <p>CL</p>
+        </div>
+        <div>
+            <img src="images/m4.jpg" alt="바비"/>
+            <p>BOBBY</p>
+        </div>
+    </div>
+    <!-- mainRow2 -->
+    
+    <!-- mainRow3 -->
+    <div class="mainRow3 cf">
+        <div>
+            <img src="images/m11.jpg" alt="싸이"/>
+            <p>싸이</p>
+        </div>
+        <div>
+            <img src="images/m15.jpg" alt="GD"/>
+            <p>GD</p>
+        </div>
+    </div>
+    <!-- mainRow3 -->
+    
+    <!-- moreBtn -->
+    <div class="moreBtn">More</div>
+    <!-- moreBtn -->
+    
+</div>   
+<!-- container 끝 -->
+    
+<!-- footer 시작 -->
+<footer id="footer">
+    
+<!-- topBtn -->
+<div class="topBtn">TOP</div>
+<!-- topBtn -->
+    
+<div>
+    <ul class="footer">
+        <li><a href="#">ABOUT YG</a></li>
+        <li><a href="#">YG RECRUIT</a></li>
+        <li><a href="#">자회사 RECRUIT</a></li>
+        <li><a href="#">SITEMAP</a></li>
+        <li><a href="#">CUSTOMER CENTER</a></li>
+        <li><a href="#">저작권 침해신고</a></li>
+    </ul>
+</div>
+<div class="name">
+    YG ENTERTAINMENT Communication Center
+</div>
+<div class="copy">
+    Copyright &copy; 2018  YG ENTERTAINMENT Co&#46;&#44; Ltd&#46;<br/>
+    All rights reserved&#46;
+</div>
+</footer>
+<!-- footer 끝 -->
+    
+</div>   
+</body>
+<!-- body 끝 -->   
+</html>

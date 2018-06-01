@@ -1,0 +1,364 @@
+body,h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+body{
+    margin: 0;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+.cf:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+/********* header *********/
+#header{
+    width: 100%;
+    height: 350px;
+    position: relative;
+    background: url(images/Musician_news.jpg)no-repeat;
+    background-size: cover;
+}
+
+#header h1{
+    width: 20px;
+    height: 20px;
+    background: url(images/mainlogo1.png) no-repeat;
+    text-indent: -9999px;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+
+#header .searchIcon{
+    width: 25px;
+    height: 25px;
+    background: url(images/seach-icon.png) no-repeat;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+}
+#header span{
+    position: absolute;
+    right: 15px;
+    top: 8px;
+    z-index: 10;
+    color: white;
+}
+
+/* sidenav */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 36;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 27px;
+    text-decoration: none;
+    font-size: 13px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+
+/********* container *********/
+#container{
+    margin: 0 10px;
+}
+
+
+/* musicianTitle */
+.musicianTitle{}
+.musicianTitle h2{
+    margin: 10px 0;
+}
+
+
+/* musicianMenu */
+.musicianMenu{
+    width: 100%;
+    height: 50px;
+}
+.musicianMenu p{
+    margin-left: 5px;
+}
+.musicianMenu div{
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+}
+.musicianMenu .news{
+    width: 45%;
+    border-bottom: 1px solid #f93a59;
+}
+.musicianMenu .news p{
+    color: #f93a59;
+}
+.musicianMenu .musician{
+    width: 45%;
+    border-bottom: 1px solid #000;
+    color: #000;
+    position: relative;
+    position: absolute;
+    right: 10px;
+}
+.musicianMenu .musician img{
+    position: absolute;
+    right: 0;
+}
+
+
+/* sidenav */
+.sidenav1 {
+    width: 100%;
+    position: absolute;
+    z-index: 36;
+    top: 20px;
+    right: 0;
+    border: 1px solid #f93a59;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.sidenav1 a {
+    height: 30px;
+    line-height: 30px;
+    padding: 8px 8px 8px 27px;
+    text-decoration: none;
+    font-size: 13px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav1 .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+/* mainRow1 */
+.mainRow1{}
+.mainRow1 .img{
+    width: 100%;
+    height: 250px;
+    background: url(images/b1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.mainRow1 .text{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.mainRow1 .text .title{
+    font-size: 17px;
+    font-weight: 600;
+}
+.mainRow1 .text p{
+    font-size: 12px;
+}
+.mainRow1 .text p:nth-child(2){
+    color: #d8d8d8;
+    margin: 10px 0;
+}
+
+
+/* mainRow2 */
+.mainRow2{}
+.mainRow2 .img{
+    width: 100%;
+    height: 250px;
+    background: url(images/b2.jpg) no-repeat;
+    background-size: cover;
+    
+}
+.mainRow2 .text{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.mainRow2 .text .title{
+    font-size: 17px;
+    font-weight: 600;
+}
+.mainRow2 .text p{
+    font-size: 12px;
+}
+.mainRow2 .text p:nth-child(2){
+    color: #d8d8d8;
+    margin: 10px 0;
+}
+
+
+/* mainRow3 */
+.mainRow3{}
+.mainRow3 .img{
+    width: 100%;
+    height: 250px;
+    background: url(images/b3.jpg) no-repeat;
+    background-size: cover;
+}
+.mainRow3 .text{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.mainRow3 .text .title{
+    font-size: 17px;
+    font-weight: 600;
+}
+.mainRow3 .text p{
+    font-size: 12px;
+}
+.mainRow3 .text p:nth-child(2){
+    color: #d8d8d8;
+    margin: 10px 0;
+}
+
+
+/* mainRow4 */
+.mainRow4{}
+.mainRow4 .img{
+    width: 100%;
+    height: 250px;
+    background: url(images/b4.jpg) no-repeat;
+    background-size: cover;
+}
+.mainRow4 .text{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.mainRow4 .text .title{
+    font-size: 17px;
+    font-weight: 600;
+}
+.mainRow4 .text p{
+    font-size: 12px;
+}
+.mainRow4 .text p:nth-child(2){
+    color: #d8d8d8;
+    margin: 10px 0;
+}
+
+
+/* mainRow5 */
+.mainRow5{}
+.mainRow5 .img{
+    width: 100%;
+    height: 250px;
+    background: url(images/b5.jpg) no-repeat;
+    background-size: cover;
+}
+.mainRow5 .text{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.mainRow5 .text .title{
+    font-size: 17px;
+    font-weight: 600;
+}
+.mainRow5 .text p{
+    font-size: 12px;
+}
+.mainRow5 .text p:nth-child(2){
+    color: #d8d8d8;
+    margin: 10px 0;
+}
+
+
+/* moreBtn */
+.moreBtn{
+    width: 50px;
+    height: 15px;
+    line-height: 15px;
+    border: 1px solid #c6c6c6;
+    text-align: center;
+    font-size: 12px;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+
+
+/********* footer *********/
+.topBtn{
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border: 2px solid darkred;
+    background: darkred;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    position: absolute;
+    right: 0;
+    top: -30px;
+}
+#footer{
+    width: 100%;
+    background: #ebebeb;
+    border-top: 1px solid #bdbdbd;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    position: relative;
+}
+#footer div{
+    font-size: 11px;
+}
+#footer div ul{}
+#footer div ul li{
+    display: inline-block;
+    margin-right: 10px;
+    text-align: center;
+}
+#footer div ul li a{}
+
+#footer .footer{
+    padding: 0 50px;
+    margin: 20px 0;
+    text-align: center;
+}
+#footer .name{
+    padding: 0 50px;
+    text-align: center;
+}
+#footer .copy{
+    padding: 0 50px;
+    text-align: center;
+}

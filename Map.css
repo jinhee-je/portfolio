@@ -1,0 +1,256 @@
+body,h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+body{
+    margin: 0;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+.cf:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+/********* header *********/
+#header{
+    width: 100%;
+    height: 50px;
+    position: relative;
+}
+#header h1{
+    width: 20px;
+    height: 20px;
+    background: url(images/mainlogo.jpg) no-repeat;
+    text-indent: -9999px;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+#header .searchIcon{
+    width: 25px;
+    height: 25px;
+    background: url(images/seach-icon.jpg) no-repeat;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+}
+#header span{
+    position: absolute;
+    right: 15px;
+    top: 8px;
+    z-index: 10;
+    color: black;
+}
+
+/* sidenav */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 36;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 27px;
+    text-decoration: none;
+    font-size: 13px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+
+/********* mainSlider *********/
+.mainSlider{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background: #000;
+    margin: 10px 0;
+}
+.mainSlider p{
+    font-size: 20px;
+    font-weight: 800;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+/********* container *********/
+#container{}
+#container .map{
+    width: 100%;
+}
+#container .text{
+    padding: 20px;
+}
+#container .text p{
+    font-size: 12px;
+    margin: 3px 0;
+}
+#container .text img{
+    width: 15px;
+    height: 15px;
+}
+
+#container .subway{
+    padding: 20px;
+}
+#container .subway h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+#container .subway div{}
+#container .subway div a{
+    font-size: 12px;
+}
+#container .subway span{
+    font-size: 12px;
+    margin-right: 5px;
+}
+#container .subway span:last-child{
+    color: red;
+}
+#container .subway img{
+    width: 10px;
+    height: 10px;
+}
+
+#container .bus{
+    padding: 20px;
+}
+#container .bus .title{}
+#container .bus p{
+    font-size: 12px;
+}
+#container .bus span{
+    font-size: 12px;
+    float: left;
+    margin-right: 5px;
+}
+#container .bus span:last-child{
+    color: red;
+}
+#container .bus img{
+    width: 15px;
+    height: 15px;
+}
+
+
+/* newsTitle */
+.newsTitle{}
+.newsTitle .text{
+    margin-left: 10px;
+}
+.newsTitle .title{
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+.newsTitle p{
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+
+/* newsImg */
+.newsImg{
+    width: 100%;
+    height: 400px;
+}
+.newsImg img{
+    width: 100%;
+    height: 400px;
+}
+
+
+/* newsText */
+.newsText{
+    width: 100%;    
+    padding: 10px;
+    box-sizing: border-box;
+    background: #dadada;
+}
+.newsText p{
+    font-size: 12px;
+    margin-bottom: 20px;
+    line-height: 25px;
+}
+.newsText .title{
+    margin-top: 10px;
+}
+
+
+/********* footer *********/
+.topBtn{
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border: 2px solid darkred;
+    background: darkred;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    position: absolute;
+    right: 0;
+    top: -30px
+}
+#footer{
+    width: 100%;
+    background: #ebebeb;
+    border-top: 1px solid #bdbdbd;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    position: relative;
+}
+#footer div{
+    font-size: 11px;
+}
+#footer div ul{}
+#footer div ul li{
+    display: inline-block;
+    margin-right: 10px;
+    text-align: center;
+}
+#footer div ul li a{}
+
+#footer .footer{
+    padding: 0 50px;
+    margin: 20px 0;
+    text-align: center;
+}
+#footer .name{
+    padding: 0 50px;
+    text-align: center;
+}
+#footer .copy{
+    padding: 0 50px;
+    text-align: center;
+}
